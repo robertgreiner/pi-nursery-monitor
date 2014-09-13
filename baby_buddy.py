@@ -8,10 +8,8 @@ device_id = "1000"
 def fetch_url(url, params, method): 
     result = urllib.urlopen(url, params)
     print result.code
-    print result.read()
 
 def write_motion_sample():
-    #fetch_url("http://babybuddy.cloudapp.net/api/motions", "1000", "POST")
     fetch_url("http://babybuddy.cloudapp.net/api/motions?deviceId=" + device_id, device_id.encode("ASCII"), "POST")
 
 
