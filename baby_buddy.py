@@ -27,4 +27,4 @@ while True:
    
     if motion_detected:
         write_motion_sample()
-        time.sleep(1)
+        time.sleep(5)
